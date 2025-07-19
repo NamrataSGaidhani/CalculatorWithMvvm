@@ -3,6 +3,7 @@ package com.namrata.calculatorwithmvvm
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -15,6 +16,7 @@ import com.namrata.calculatorwithmvvm.viewModel.CalculatorViewModel
 class MainActivity : AppCompatActivity() {
 
     private lateinit var tvInput: TextView
+    private lateinit var ib_back: ImageButton
     private val viewModel: CalculatorViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,9 +32,13 @@ class MainActivity : AppCompatActivity() {
         )
 
         tvInput = findViewById(R.id.tvInput)
+        ib_back = findViewById(R.id.ib_back)
 
         buttonId.forEach { id ->
             findViewById<Button>(id).setOnClickListener { onButtonClick(it) }
+        }
+        ib_back.setOnClickListener {
+            viewModel.onBack()
         }
 
         viewModel.inputText.observe(this) {
@@ -64,7 +70,7 @@ class MainActivity : AppCompatActivity() {
             R.id.btnDivide -> viewModel.onOperator("/")
             R.id.btnEqual -> viewModel.onEqual()
             R.id.btnClear -> viewModel.onClear()
-            R.id.btnBack -> viewModel.onBack()
+            //R.id.btnBack -> viewModel.onBack()
 
             else -> {
                 // Handle unknown button clicks if necessary
