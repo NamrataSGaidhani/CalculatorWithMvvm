@@ -3,7 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="background">#efefef</color>
-    <color name="button_text_color">#FF000000</color>
+    <color name="button_text_color">#3f3f3f</color>
     <color name="operator_text_color">#FFFFFFFF</color>
-
+    <color name="primary">#99ccff</color>
+    <color name="primary_dark">#b3d9ff</color>
+    <color name="accent">#e6f2ff</color>
 </resources>

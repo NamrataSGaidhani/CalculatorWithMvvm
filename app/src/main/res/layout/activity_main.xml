@@ -95,7 +95,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvInput"
         app:layout_constraintBottom_toTopOf="@+id/btnMultiply"
         style="@style/TextAppearance.AppCompat.Caption"
-        android:textColor="@color/operator_text_color"
+        android:textColor="@color/button_text_color"
         android:textSize="25sp"
         />
 
@@ -169,7 +169,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnSubtract"
         android:text="@string/multiply"
         style="@style/TextAppearance.AppCompat.Caption"
-        android:textColor="@color/operator_text_color"
+        android:textColor="@color/button_text_color"
         android:textSize="25sp"
         />
 
@@ -243,7 +243,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnAdd"
         android:text="@string/minus"
         style="@style/TextAppearance.AppCompat.Caption"
-        android:textColor="@color/operator_text_color"
+        android:textColor="@color/button_text_color"
         android:textSize="25sp"
         />
 
@@ -255,6 +255,8 @@
         android:layout_marginBottom="8dp"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:textSize="18sp"
+        android:gravity="center"
         android:background="@drawable/btn_background"
         app:layout_constraintTop_toBottomOf="@+id/btnOne"
         app:layout_constraintEnd_toStartOf="@+id/btnZero"
@@ -299,7 +301,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnEqual"
         android:text="@string/clear"
         style="@style/TextAppearance.AppCompat.Caption"
-        android:textColor="@color/operator_text_color"
+        android:textColor="@color/button_text_color"
         android:textSize="18sp"
         />
 
@@ -314,7 +316,7 @@
         android:layout_height="0dp"
         android:background="@drawable/operator_btn_background"
         style="@style/TextAppearance.AppCompat.Caption"
-        android:textColor="@color/operator_text_color"
+        android:textColor="@color/button_text_color"
         app:layout_constraintStart_toEndOf="@+id/btnClear"
         app:layout_constraintTop_toBottomOf="@+id/btnSubtract"
         app:layout_constraintEnd_toEndOf="parent"
@@ -330,7 +332,6 @@
         android:layout_marginBottom="16dp"
         android:text="@string/equal"
         android:textSize="25sp"
-        android:textStyle="bold"
         android:padding="16dp"
         android:background="@drawable/equal_btn_background"
         android:layout_marginStart="16dp"
@@ -338,7 +339,7 @@
         app:layout_constraintEnd_toEndOf="@+id/btnClear"
         app:layout_constraintBottom_toBottomOf="parent"
         style="@style/TextAppearance.AppCompat.Caption"
-        android:textColor="@color/operator_text_color"
+        android:textColor="@color/button_text_color"
         
         />
 
