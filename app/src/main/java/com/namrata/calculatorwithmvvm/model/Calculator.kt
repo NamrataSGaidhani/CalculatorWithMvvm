@@ -5,7 +5,7 @@ object Calculator {
        var exp = expression
        var prefix =""
 
-           if (exp.startsWith("-")) {
+           if (exp.startsWith("-")){
                prefix = "-"
                exp = exp.substring(1)
            }
