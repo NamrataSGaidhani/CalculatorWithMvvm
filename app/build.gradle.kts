@@ -55,5 +55,13 @@ dependencies {
     implementation(libs.androidx.lifecycle.livedata.ktx)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    testImplementation(libs.androidx.core.testing)
+    //for Junit Parameterized Testing Dependency
+    testImplementation(libs.junit.jupiter.params)
+    testImplementation(libs.junit.jupiter.api)
+    testRuntimeOnly(libs.junit.jupiter.engine)
 
+}
+tasks.withType<Test> {
+    useJUnitPlatform()
 }
